@@ -1,0 +1,120 @@
+﻿@import url(sanitize.css);
+body {
+    background-color: aliceblue;
+}
+
+/*フェード処理*/
+div.wrap {
+    animation: fadein 3s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/*ヘッダー*/
+div.header {
+    display: flex;
+    flex-direction: row;
+}
+div.menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    margin-left: auto;
+    width: 30%;
+}
+
+/*メイン*/
+div.plofile {
+    margin-right: 50px;
+}
+
+div.introduction {
+    margin-right: 50px;
+}
+
+div.inquiry {
+}
+div.main {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+div.maintext {
+    margin-right: 200px;
+    font-size: 1.2em;
+}
+div.area {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+div.input {
+    display: flex;
+    flex-direction: column;
+}
+div.name{
+    display:flex;
+    flex-direction:row;
+}
+div.information {
+    display: flex;
+    flex-direction: row;
+}
+div.back {
+    margin-left: 45%;
+    margin-right: 50%;
+    width: 60%;
+}
+button {
+    width: 80%;
+    background-color: #2096F3;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+    margin-left: 10%;
+}
+
+/*フッター*/
+footer {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+div.footertext {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: row;
+}
+div.imgs {
+    display: flex;
+    flex-direction:row;
+}
+div.footerimg img{
+    width: 40%;
+    height: 40px;
+    margin: 20px;
+}
+div.tel {
+    padding: 30px;
+    margin-right: 200px;
+}
+div.mail {
+    padding: 30px;
+    margin-right: 200px;
+}
+div.sns {
+    padding: 30px
+}

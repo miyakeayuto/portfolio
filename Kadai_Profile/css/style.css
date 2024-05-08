@@ -1,0 +1,176 @@
+﻿@import url(sanitize.css);
+body {
+    background-color: aliceblue;
+}
+
+/*フェード処理*/
+div.wrap {
+    animation: fadein 3s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/*ヘッダー*/
+div.header {
+    display: flex;
+    flex-direction: row;
+}
+div.menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    margin-left: auto;
+    width: 30%;
+}
+
+/*メイン*/
+div.plofile {
+    margin-right: 50px;
+}
+div.introduction {
+    margin-right: 50px;
+}
+div.inquiry {
+
+}
+h1 {
+    font-size: 3em;
+    color: black;
+}
+div.main {
+    display: flex;
+    align-items: center;
+}
+div.maintext{
+    width: 80%;
+}
+div.maintext p{
+    font-size: 1.5em;
+}
+div.maintext h3{
+    font-size: 1.3em;
+}
+div.page {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+}
+div.mainimg {
+    width: 75%;
+    display:flex;
+    justify-content: flex-end;
+    margin-right:10px;
+}
+div.mainimg img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+/*フッター*/
+footer {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+div.footertext {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: row;
+}
+div.imgs {
+    display: flex;
+    flex-direction:row;
+}
+div.footerimg img{
+    width: 40%;
+    height: 40px;
+    margin: 20px;
+}
+div.tel {
+    padding: 30px;
+    margin-right: 200px;
+}
+div.mail {
+    padding: 30px;
+    margin-right: 200px;
+}
+div.sns {
+    padding: 30px
+}
+
+/*レスポンシブ*/
+@media(max-width: 1000px){
+    div.menu{
+        display:none;
+    }
+    h1{
+        font-size: 1.75em;
+    }
+    div.maintext h3{
+        font-size: 1.3em;
+    }
+    div.maintext p{
+        font-size: 1em;
+    }
+    div.mainimg{
+        width: 50%;
+    }
+    div.page{
+        font-size: 1em;
+    }
+    div.footertext{
+        margin: 10px 20px;
+    }
+    div.footertext p{
+        font-size: 0.7em;
+        width: 150px;
+    }
+    div.footerimg{
+        width: 30%;
+    }
+    div.tel {
+        padding: 20px;
+        margin-right: 100px;
+    }
+
+    div.mail {
+        padding: 20px;
+        margin-right: 100px;
+    }
+}
+@media(max-width: 400px) {
+    div.main {
+        flex-direction: column;
+    }
+
+    div.mainimg {
+        width: 80%;
+        margin-right: 100px;
+    }
+
+    div.page{
+        width: 110%;
+        font-size: 0.9em;
+    }
+
+    div.footertext {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.footertext p {
+        font-size: 1em;
+        width: 100%;
+    }
+}

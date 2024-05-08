@@ -1,0 +1,22 @@
+﻿@import url(sanitize.css);
+
+hi{
+    font-size: 40px;
+    margin: 0;
+}
+h2{
+    font-size: 32px;
+    margin: 0;
+}
+p {
+    font-size: 24px;
+    border-bottom-style:double;
+}
+img {
+    width: 45%;
+    border-bottom-style: double;
+    margin: 10px;
+}
+a {
+    font-size: 32px;
+}
